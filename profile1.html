@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="ja">  
+    <head>
+        <meta charset="utf-8"> 
+        <meta name="viewport" content="width=dvice-width,initial-scale=1.0"> 
+        <title>自己PRサイト</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css">
+        <style type="text/css">
+
+
+        html{
+            scroll-behavior: smooth;
+        }
+
+        nav{
+            padding: 20px;
+            scroll-behavior: smooth;
+        }
+
+       li{
+           list-style-type: none;
+           padding: 10px;
+           margin: 10px;
+       }
+        body{
+            padding: 0;
+            margin: 50;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            background-color: #f4eee8;
+             }
+        #main{
+            background-color: #f4eee8;
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: 2;
+            overflow: auto;
+            box-sizing: border-box;
+            transition: .4s;
+
+        }
+        #menu{
+            background-color:#fffafa;
+            color: #373737;
+            position: absolute;
+            top: 0;
+            right: 0;
+            padding: 8px;
+            width: 200px;
+            min-height: 100%;
+            z-index: 1;
+            box-sizing: border-box;
+            font-size: 30px;
+            
+        }
+        #open{
+            float: right;
+            cursor: pointer;
+        }
+        #main.menu-open{
+            left: -180px;
+        }
+        h1{
+            text-align: center;
+            color: #373737;
+            font-size: 100px;
+            padding: 200px;
+            margin: 100px;
+
+        }
+        .sub_title{
+            text-align: center;
+            background-color: lightgray;
+            color: #373737;
+            font-size: 80px;
+            padding: 25px;
+            margin: 0;
+        }
+
+        .sub_detail{
+            text-align: center;
+            font-size: 20px;
+        }
+        img{
+            margin-bottom: 100px;
+        }
+        </style>
+    </head>
+    <body>
+        <nav><a href="#about"></a>
+            <a href="#work"></a></nav>
+        
+        <div id="menu">
+            <ul>
+                <li><a href="#about">about </a></li>
+                <li><a href="#work">work </a></li>
+            </ul>
+
+        </div>
+        <div id="main">
+            <i class="fa fa-bars fa-3x" id="open"></i>
+           
+        <h1>who is she ???</h1>
+        <p>
+            <div style="text-align: center;">
+            <img src="2466.jpg" alt="写真"
+            width="600px"
+            height="300px">
+        </div>
+
+        <div style="text-align: center;">
+            <img src="disney.jpg" alt="写真"
+            width="600px"
+            height="300px">
+            </div>
+        </p>
+        <li id="about"></li>
+        <h2 class="sub_title">about</h2>
+        <p class="sub_detail">
+        1998年11月30日、宮城県仙台市で産まれ、大学卒業までを仙台で過ごした。
+        中学生からはじめたバレーボールとパソコンを操作することが好きだったきっかけに、
+        大学では、スポーツをする側ではなく、支える側として
+        分析スタッフ(アナリスト)の活動をしていた。
+        また、アイドルが好きなことから趣味はライブに行くことだ。趣味を通して知り合った友達も
+        たくさんおり、会場に行くととてもハッピーな気分になれる。
+        自分の活力のひとつになっている。
+        ディズニーの世界観が好きで、友達と時間が合えばテーマパークに足を運んで楽しんでいる。
+        </p>
+        <br></br><br><br><br><br><br><br><br><br><br>
+        <br></br><br><br><br><br><br><br><br><br><br>
+        <br></br><br><br><br><br><br><br><br><br><br>
+        <li id="work"></li>
+        <h2 class="sub_title">work</h2>
+        
+        <h2 id="#work"></h2>
+        <p class="sub_detail">
+        大学でのアナリスト活動から、パソコンを操作する仕事に就きたいと考え、未経験でIT企業に入社。
+        現在は、エンジニアになるための研修を受けている最中である。
+        </p>
+        <br></br><br><br><br><br><br><br><br><br><br>
+        <br></br><br><br><br><br><br><br><br><br><br>
+        <br></br><br><br><br><br><br><br><br><br><br>
+     
+    </div>
+    
+    <script>
+        'use strict';
+        const open = document.getElementById('open');
+        const main = document.getElementById('main');
+
+        open.addEventListener('click',()=> {
+            if(main.className === 'menu-open'){
+                main.className = '';
+            }else{
+        main.className = 'menu-open';
+            }
+        });
+    </script>
+    </body>
+</html>
